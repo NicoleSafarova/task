@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <title>{{ title }}</title>
+    {% if 'инженер' in title or 'строитель' in title %}
+        <h2>Инженерные тренировки</h2>
+        <img src="static/img/photo.jpeg"
+                            alt="здесь должна была быть картинка, но не нашлась">
+    {% else %}
+        <h2>Научные тренировки</h2>
+        <img src="static/img/photo.jpeg"
+                            alt="здесь должна была быть картинка, но не нашлась">
+    {% endif %}
+{% endblock %}
